@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>按钮</title>
+  </head>
+  <body>
+    <!--button	            定义可点击的按钮（通常与 JavaScript 一起使用来启动脚本）。
+        checkbox	        定义复选框。
+        color   	        定义拾色器。
+        date    	        定义 date 控件（包括年、月、日，不包括时间）。
+        datetime    	    定义 date 和 time 控件（包括年、月、日、时、分、秒、几分之一秒，基于 UTC 时区）。
+        datetime-local  	定义 date 和 time 控件（包括年、月、日、时、分、秒、几分之一秒，不带时区）。
+        email   	        定义用于 e-mail 地址的字段。
+        file    	        定义文件选择字段和 "浏览..." 按钮，供文件上传。
+        hidden  	        定义隐藏输入字段。
+        image   	        定义图像作为提交按钮。
+        month   	        定义 month 和 year 控件（不带时区）。
+        number  	        定义用于输入数字的字段。
+        password	        定义密码字段（字段中的字符会被遮蔽）。
+        radio	            定义单选按钮。
+        range   	        定义用于精确值不重要的输入数字的控件（比如 slider 控件）。
+        reset   	        定义重置按钮（重置所有的表单值为默认值）。
+        search  	        定义用于输入搜索字符串的文本字段。
+        submit  	        定义提交按钮。
+        tel     	        定义用于输入电话号码的字段。
+        text    	        默认。定义一个单行的文本字段（默认宽度为 20 个字符）。
+        time    	        定义用于输入时间的控件（不带时区）。
+        url	                定义用于输入 URL 的字段。
+        week    	        定义 week 和 year 控件（不带时区）。-->
+
+    <!-- 单选按钮 -->
+    <!-- <label> 标签为 input 元素定义标注（标记）。
+    label 元素不会向用户呈现任何特殊效果。不过，它为鼠标用户改进了可用性。如果您在 label 元素内点击文本，就会触发此控件。就是说，当用户选择该标签时，浏览器就会自动将焦点转到和标签相关的表单控件上。
+    <label> 标签的 for 属性应当与相关元素的 id 属性相同。 -->
+    <!-- name相同才可多选一 -->
+    <input id="indoor" type="radio" name="indoor-outdoor" maxlength="6" />
+    <label for="indoor">Indoor</label>
+    <input id="outdoor" type="radio" name="indoor-outdoor" checked />
+    <label for="outdoor">Outdoor</label>
+    <br />
+    <!-- 复选框 -->
+    <!-- 属性后加checked表示默认选中 -->
+    <input id="first" type="checkbox" name="personality" checked />
+    <label for="first">忠诚</label>
+    <input id="second" type="checkbox" name="personality" />
+    <label for="second">懒惰</label>
+    <input id="third" type="checkbox" name="personality" />
+    <label for="third">积极</label>
+    <br />
+    <!-- 文本框 -->
+    <!-- maxlength最多输入6个字符 -->
+    <!-- required表示必须输入文本 -->
+    <!-- placeholder表示提示字符 -->
+    <input type="text" maxlength="6" placeholder="北京欢迎你" required />
+  </body>
+</html>
